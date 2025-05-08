@@ -29,7 +29,7 @@
 	<a href="{base}/">Home</a>
 	<a href="{base}/devblog">Devblog</a>
 	<a href="{base}">Projects</a>
-	<a href="{base}">About</a>
+	<a href="{base}/#about">About</a>
 	<a href="{base}">Contact</a>
 </nav>
 <slot />

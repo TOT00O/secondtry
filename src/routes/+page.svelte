@@ -12,9 +12,10 @@
 
     </div>
     <div class="about" id="about">
-        <h1>About</h1>
+        <div class="sect">
+        <h1>About</h1>  
         <p>Welcome to my portfolio! I'm a passionate developer with a love for creating innovative solutions. Explore my projects and get to know me better.</p>
-        
+        </div>
         
     </div>
 </main>
@@ -32,7 +33,14 @@
         width: 100vw;
         height: 100vh;
         background-color: black;
+        align-content: center;
+        justify-items: center;
+    }
 
+    .sect{
+        width: 70vw;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.612) ;
     }
 
 .head-container {
@@ -66,7 +74,8 @@
 
 @font-face {
   font-family: 'TFMixVF';
-  src: url(JangerRegular-lgYWq.otf);
+  src: local('JangerRegular-lgYWq'), local('JangerRegular-lgYWq'), local('JangerRegular lgYWq'),
+			local('JangerRegular-lgYWq'), url('/static/JangerRegular-lgYWq.otf');
 }
 
 </style>
