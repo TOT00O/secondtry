@@ -125,7 +125,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-        filter: drop-shadow(5px 20px 4px rgba(0, 0, 0, 0.8));
+        filter: drop-shadow(5px 20px 4px rgba(0, 0, 0, 0.6));
 
 }
 
