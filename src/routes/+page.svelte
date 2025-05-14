@@ -18,25 +18,16 @@
     </div>
     <div class="about" id="about" use:scrollRef={'about'}>
         
-        <img src="https://i.pinimg.com/736x/61/47/00/614700b6bc36f8a72d4951f5488ff142.jpg" class="profile">
+        <img src="/me.png" class="pfp">
+
+        <h2>Who am i?</h2>
         
         
     </div>
     <div class="projects" id="projects" use:scrollRef={'projects'}>
         <h1 class="title-1">PROJECTS</h1>
         <div class="contain">
-            <a href="{base}/sewing">
-                <div class="la">
-                <h1>Sewing</h1>
-                <p>Explore my sewing projects and designs.</p>
-                </div>
-            </a>
-            <a href="{base}/drawings">
-                <div class="la">
-                <h1>Sewing</h1>
-                <p>Explore my sewing projects and designs.</p>
-                </div>
-            </a>
+
         </div>
     </div>
     <div class="contacts" id="contacts" use:scrollRef={'contacts'}>
@@ -90,10 +81,23 @@
         width: 100vw;
         height: 100vh;
         background-color: black;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+
+
+    }
+
+     .pfp{
+        width: 40%;
+        position: relative;
+        top:5%;
+    }
+
+
+    .about h2{
+        font-size: 100px;
+        position: relative;
+        left:40%;
+        top:-80%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
   
@@ -146,38 +150,16 @@
 }
 .contain{
     margin-top: 150px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 50vh;
     justify-content: center;
     align-items: center;
 }
 
-.contain a{
-    margin: 100px;
-    margin-top: 0;
-    width: 450px;
-    height: 450px;
-    background:url('/sewplaceholder.png');
-    background-size:cover ;
-}
 
-.contain a:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.contain .la:hover{
-opacity: 1;
-}
-.contain .la{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
 
 .contacts{
     width: 100vw;
