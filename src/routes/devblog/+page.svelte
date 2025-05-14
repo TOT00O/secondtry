@@ -2,6 +2,9 @@
 	export let data;
   import { base } from '$app/paths';
 </script>
+<main>
+	<br>
+	<br>
 
 <h1>Devblog</h1>
 
@@ -15,3 +18,15 @@
 	{/each}
 </ul>
 
+</main>
+
+
+<style>
+main{
+		width: 100vw;
+		height: 100vh;
+		background-color: black;
+	}
+
+	
+</style>

@@ -37,6 +37,7 @@
     "@sveltejs/adapter-static": "^3.0.8",
     "animate.css": "^4.1.1",
     "highlight.js": "^11.11.1",
-    "mdsvex": "^0.12.5"
+    "mdsvex": "^0.12.5",
+    "svelte-scrolling": "^1.5.1"
   }
 }
