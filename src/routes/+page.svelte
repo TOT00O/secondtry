@@ -132,7 +132,7 @@
     justify-content: center;
     align-items: center;
     height: 20vh;
-    width: 45vw;
+    width: 46vw;
     top: 20%;
     left: 10px;
     position: relative;
