@@ -144,7 +144,7 @@
 
 
 .head-text {
-    font-size: 8.3rem;
+    font-size: 8.2rem;
     padding: 50px;
     font-weight: bold;
     color: transparent;
