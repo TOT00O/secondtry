@@ -51,13 +51,11 @@
 	<a href="{base}/" use:scrollTo={'home'}>Home</a>
 	<a href="{base}/" use:scrollTo={'about'}>About</a>
 	<a href="{base}/#projects" use:scrollTo={'projects'} >Projects</a>
-	<a href="{base}/#contacts" use:scrollTo={'contacts'}>Contact</a>
 	<a href="{base}/devblog">Devblog</a>
 	{:else}
 	<a href="{base}/">Home</a>
 	<a href="{base}/" >About</a>
 	<a href="{base}/#projects" >Projects</a>
-	<a href="{base}/#contacts">Contact</a>
 	<a href="{base}/devblog">Devblog</a>
 	{/if}
 	
@@ -77,13 +75,23 @@
 		z-index: 200;
 	}
 
+			.nav:hover{
+		background-color: gray;
+		padding: 6px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+		opacity: 1;
+	}
+
 		.hide{
 		opacity: 0;
-		transition: 0.5s ease-out;
+		transition: 0.3s ease-out;
 	}
 	.show {
 		opacity: 1 ;
-		transition: 0.5s ease-in;
+		transition: 0.3s ease-in;
 	}
 
 

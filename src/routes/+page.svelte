@@ -2,8 +2,14 @@
     import 'animate.css';
     import { base } from '$app/paths'; 
     import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling'
+    import Flickity from 'svelte-flickity';
+  const options = {
+    wrapAround: true,
+    cellAlign: 'center'
+  };
+  
+  
 
-    
 </script>
 
 <main>
@@ -21,22 +27,41 @@
         <img src="/me.png" class="pfp">
 
         <h2>Who am i?</h2>
+        <h3></h3>
         
         
+    </div>
+    <div class="contacts" id="contacts" use:scrollRef={'contacts'}>
+       
     </div>
     <div class="projects" id="projects" use:scrollRef={'projects'}>
         <h1 class="title-1">PROJECTS</h1>
         <div class="contain">
-
+            <br>
+            <br>
+            <Flickity {options} >
+                <div class="carousel-cell" on:click={() => window.location.href = `${base}/project1`}>Slide 1</div>
+                <div class="carousel-cell" on:click={() => window.location.href = `${base}/project2`}>Slide 2</div>
+                <div class="carousel-cell" on:click={() => window.location.href = `${base}/project3`}>Slide 3</div>
+            </Flickity>
         </div>
     </div>
-    <div class="contacts" id="contacts" use:scrollRef={'contacts'}>
 
-        
-    </div>
 </main>
 
 <style>
+
+
+  .carousel-cell {
+    width: 50%;
+    height: 300px;
+    margin-right: 20px;
+    background: #8C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
 
     main{
         scroll-behavior: smooth;
@@ -151,12 +176,9 @@
 .contain{
     margin-top: 150px;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 50vh;
-    justify-content: center;
-    align-items: center;
+;
 }
 
 
