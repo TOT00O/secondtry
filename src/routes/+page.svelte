@@ -15,7 +15,7 @@
 <main>
     <div class="first"  use:scrollRef={'home'}>
         <div class="head-container">
-        <h1 class="head-text"> Portfolio</h1>
+        <h1 class="head-text"> PORTFOLIO</h1>
         
         </div>
         <a href="#about" class="scroll-down" use:scrollTo={'about'}>
