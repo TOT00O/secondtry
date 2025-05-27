@@ -24,18 +24,21 @@
     </div>
     <div class="about" id="about" use:scrollRef={'about'}>
         
-        <img src="/me.png" class="pfp">
+        <img src="{base}/me.png" class="pfp">
 
         <h2>Who am i?</h2>
-        <h3></h3>
+        <h3>I am a student who aspires to work with fashion and art. Creativity has always been at the heart of everything I do, and I’m passionate about expressing ideas through visual design, clothing, and aesthetics. I'm constantly exploring new styles, trends, and artistic techniques, and I hope to build a career that allows me to merge self-expression with innovation.
+        
+ </h3>
         
         
     </div>
+    <!--
     <div class="contacts" id="contacts" use:scrollRef={'contacts'}>
        
-    </div>
+    </div>-->
     <div class="projects" id="projects" use:scrollRef={'projects'}>
-        <h1 class="title-1">PROJECTS</h1>
+        <h1 class="title-1">"PROJECTS"</h1>
         <div class="contain">
             <br>
             <br>
@@ -123,6 +126,17 @@
         left:40%;
         top:-80%;
         font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .about h3{
+        font-size: 20px;
+        width: 50vw;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        left:40.5%;
+        top:-73%;
+
+
     }
 
   
