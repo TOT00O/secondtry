@@ -10,10 +10,10 @@
   
 
   let images =[
-    
+    `${base}/heart.png`,
+    `${base}/amazing.png`,
     `${base}/angel.png`,
     `${base}/face.png`,
-    `${base}/amazing.png`,
     `${base}/back.png`,
     `${base}/regein.png`
   ]
@@ -73,8 +73,8 @@
     {#if showPopup}
         <div class="popup-overlay" on:click={closePopup}>
             <div class="popup-content" on:click|stopPropagation>
-                <button class="close-btn" on:click={closePopup}>✕</button>
-                <img src={selectedImage} alt="Enlarged artwork" class="enlarged-image">
+                <button class="close" on:click={closePopup}>✕</button>
+                <img src={selectedImage} alt="kys" class="enlarged">
             </div>
         </div>
     {/if}
@@ -125,13 +125,13 @@
         max-height: 90vh;
     }
     
-    .enlarged-image {
+    .enlarged{
         max-height: 90vh;
         max-width: 90vw;
         object-fit: contain;
     }
 
-     .close-btn {
+     .close{
         position: absolute;
         top: -40px;
         right: 0;
