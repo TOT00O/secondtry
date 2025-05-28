@@ -17,6 +17,20 @@
     `${base}/back.png`,
     `${base}/regein.png`
   ]
+
+      let selectedImage = null;
+    let showPopup = false;
+    
+    function openPopup(image) {
+        selectedImage = image;
+        showPopup = true;
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when popup is open
+    }
+    
+    function closePopup() {
+        showPopup = false;
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
   
 
 </script>
@@ -48,12 +62,22 @@
         </div>
         <div class="contain">
             {#each images as image}
-                <img src={image} alt="i suck">
+                <img src={image} alt="Artwork" on:click={() => openPopup(image)} class="art-image">
             {/each}
         </div>
-
         <div class="spin"></div>
     </div>
+
+
+    
+    {#if showPopup}
+        <div class="popup-overlay" on:click={closePopup}>
+            <div class="popup-content" on:click|stopPropagation>
+                <button class="close-btn" on:click={closePopup}>✕</button>
+                <img src={selectedImage} alt="Enlarged artwork" class="enlarged-image">
+            </div>
+        </div>
+    {/if}
     <div class="projects" id="projects" use:scrollRef={'projects'}>
         <h1 class="title-1">"PROJECTS"</h1>
         <div class="contain">
@@ -71,9 +95,58 @@
 
 <style>
 
-    .art img {
-    height: 500px;  
-  }
+   .art img {
+        height: 500px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+     .art img:hover {
+        transform: scale(1.02);
+    }
+
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        animation: fadeIn 0.3s ease-out;
+    }
+    
+    .popup-content {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+    
+    .enlarged-image {
+        max-height: 90vh;
+        max-width: 90vw;
+        object-fit: contain;
+    }
+
+     .close-btn {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 
  #cell1{
     font-family:Courier New, monospace;

@@ -1,4 +1,4 @@
-import{s as i,n as s}from"../chunks/C9f0EK1T.js";import{S as l,i as h,d as c,a as b,l as m,c as f,k as d,h as g}from"../chunks/B_8vudaN.js";import{b as n}from"../chunks/Cglaj9x_.js";function u(r){let e,a=`<br/> <br/> <h1 class="svelte-1rbn1ko">Mad as a hatter</h1> <h2 class="svelte-1rbn1ko">stitched into silence. <br/>
+import{s as i,n as s}from"../chunks/CtpSAkM3.js";import{S as l,i as h,d as c,a as b,l as m,c as f,k as d,h as g}from"../chunks/BYMBYcV6.js";import{b as n}from"../chunks/BCfEb2nz.js";function u(r){let e,a=`<br/> <br/> <h1 class="svelte-1rbn1ko">Mad as a hatter</h1> <h2 class="svelte-1rbn1ko">stitched into silence. <br/>
 laughter echoes down sterile halls,<br/>
 fraying at the edges of reason.  <br/>
 white fabric, tight-laced and trembling — <br/>

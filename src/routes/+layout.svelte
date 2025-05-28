@@ -56,7 +56,7 @@
 	{:else}
 	<a href="{base}/">Home</a>
 	<a href="{base}/#about">About</a>
-	<a href="{base}/#art">Art</a>
+	<a href="{base}/#art"np>Art</a>
 	<a href="{base}/#projects" >Projects</a>
 	<a href="{base}/devblog">Devblog</a>
 	{/if}
@@ -69,22 +69,29 @@
 
 <style>
 		.nav{
-		background-color: gray;
+		background-color: rgb(255, 255, 255);
 		padding: 6px;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 200;
+		color: black;
+		
 	}
 
 			.nav:hover{
-		background-color: gray;
+		background-color: rgb(0, 0, 0);
 		padding: 6px;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 200;
 		opacity: 1;
+		color: white;
+	}
+
+	.nav a:hover{
+		text-decoration: overline;
 	}
 
 		.hide{
