@@ -8,6 +8,15 @@
     cellAlign: 'center'
   };
   
+
+  let images =[
+    
+    `${base}/angel.png`,
+    `${base}/face.png`,
+    `${base}/amazing.png`,
+    `${base}/back.png`,
+    `${base}/regein.png`
+  ]
   
 
 </script>
@@ -33,17 +42,25 @@
         
         
     </div>
-    <!--
-    <div class="contacts" id="contacts" use:scrollRef={'contacts'}>
-       
-    </div>-->
+    <div class="art" id="art" use:scrollRef={'art'}>
+        <div class="spin">
+            <h1 class="title-1">ART</h1>
+        </div>
+        <div class="contain">
+            {#each images as image}
+                <img src={image} alt="i suck">
+            {/each}
+        </div>
+
+        <div class="spin"></div>
+    </div>
     <div class="projects" id="projects" use:scrollRef={'projects'}>
         <h1 class="title-1">"PROJECTS"</h1>
         <div class="contain">
             <br>
             <br>
             <Flickity {options} >
-                <div class="carousel-cell" on:click={() => window.location.href = `${base}/project1`}>Slide 1</div>
+                <div class="carousel-cell" id="cell1"on:click={() => window.location.href = `${base}/project1`}>Mad as a hatter</div>
                 <div class="carousel-cell" on:click={() => window.location.href = `${base}/project2`}>Slide 2</div>
                 <div class="carousel-cell" on:click={() => window.location.href = `${base}/project3`}>Slide 3</div>
             </Flickity>
@@ -54,6 +71,14 @@
 
 <style>
 
+    .art img {
+    height: 500px;  
+  }
+
+ #cell1{
+    font-family:Courier New, monospace;
+    background:url(https://i.pinimg.com/736x/4f/7d/dc/4f7ddca39aa437b72acc51df3aeaf73d.jpg);
+ }
 
   .carousel-cell {
     width: 50%;
@@ -187,23 +212,49 @@
     font-size: 50px;
     margin-top: 60px;
 }
-.contain{
+.projects .contain{
     margin-top: 150px;
     background-color: #ffffff;
     width: 100%;
     height: 50vh;
-;
+
 }
 
 
 
-.contacts{
+.art{
     width: 100vw;
         height: 100vh;
         background-color: black;
         align-content: start;
         justify-items: center;
 }
+.art .contain{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.spin{
+    width: 100vw;
+    height: 10vh;
+    background-color: #ffffff;
+}
+
+.art .title-1{
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+}
+
+
 
 @font-face {
   font-family: 'TFMixVF';

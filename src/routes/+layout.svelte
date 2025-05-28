@@ -49,12 +49,14 @@
 {#if isHome}
 
 	<a href="{base}/" use:scrollTo={'home'}>Home</a>
-	<a href="{base}/" use:scrollTo={'about'}>About</a>
+	<a href="{base}/#about" use:scrollTo={'about'}>About</a>
+	<a href="{base}/#art" use:scrollTo={'art'}>Art</a>
 	<a href="{base}/#projects" use:scrollTo={'projects'} >Projects</a>
 	<a href="{base}/devblog">Devblog</a>
 	{:else}
 	<a href="{base}/">Home</a>
-	<a href="{base}/" >About</a>
+	<a href="{base}/#about">About</a>
+	<a href="{base}/#art">Art</a>
 	<a href="{base}/#projects" >Projects</a>
 	<a href="{base}/devblog">Devblog</a>
 	{/if}
